@@ -35,3 +35,5 @@ do {
 
 //Check out what's inside our public array
 print(arrayLines)
+var interpret: Interpreter = Interpreter()
+print(interpret.test)
