@@ -37,3 +37,6 @@ do {
 print(arrayLines)
 var interpret: Interpreter = Interpreter()
 print(interpret.test)
+
+var tokens: Token = Token()
+print(tokens.TokenType)

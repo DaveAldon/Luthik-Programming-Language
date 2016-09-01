@@ -8,10 +8,37 @@
 
 import Foundation
 
+
+
 class Token {
     
-    enum TokenType {
-        case Integer
-        case Plus
+    private var value : Character?
+    
+    enum TokenType : String {
+        case Integer = "INTEGER"
+        case Plus = "PLUS"
+        case Newline = "NEWLINE"
+        
+        var tokenTypeDescription: String {
+            get {
+                return self.tokenTypeDescription
+            }
+            set {
+                tokenTypeDescription = self.tokenTypeDescription
+            }
+        }
+        
+        enum Operator {
+            case Add
+            case Assignment
+        }
+        
+        mutating func TokenType(tokenTypeDescription : String) -> Void {
+            self.tokenTypeDescription = tokenTypeDescription
+        }
+    }
+
+    func Token(charValue : Character) {
+        self.value = charValue
     }
 }

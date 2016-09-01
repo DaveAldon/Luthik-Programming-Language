@@ -18,7 +18,7 @@ class Interpreter {
        self.text = inputText
     }
     
-    mutating func nextToken() -> [Token] {
+    func nextToken() -> [Token] {
         if self.position > self.text.characters.count - 1 {
             return nil
         }
