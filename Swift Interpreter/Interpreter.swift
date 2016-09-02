@@ -9,18 +9,18 @@
 import Foundation
 
 class Interpreter {
-    var test = "Success"
-    var text = ""
-    var position = 0
-    //var currentToken = [Token]
     
-    func Begin (inputText: String) {
-       self.text = inputText
-    }
+    var stack = [String]()
     
-    func nextToken() -> [Token] {
-        if self.position > self.text.characters.count - 1 {
-            return nil
+    var dictionary = [String]()
+        
+    func AddWords (newDictionary : String) {
+        for word in newDictionary.characters {
+            dictionary[word].uppercaseString = newDictionary[word]
         }
     }
-}
+    
+    func Run (text : String) {
+        
+    }
+   }

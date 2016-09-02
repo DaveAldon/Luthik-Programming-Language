@@ -19,7 +19,8 @@ do {
         do {
             let input = try String(contentsOfURL: path, encoding:NSUTF8StringEncoding)
             let newlineChars = NSCharacterSet.newlineCharacterSet()
-            let lines = input.utf16.split { newlineChars.characterIsMember($0) }.flatMap(String.init)
+            let lines = input.characters.split {$0 == " "}.map(String.init)
+            //let lines = input.utf16.split { newlineChars.characterIsMember($0) }.flatMap(String.init) //Split by line
             var linesLength = lines.count
 
             //Loop through the array and place its values into a public array
@@ -35,8 +36,8 @@ do {
 
 //Check out what's inside our public array
 print(arrayLines)
+
+/*
 var interpret: Interpreter = Interpreter()
 print(interpret.test)
-
-var tokens: Token = Token()
-print(tokens.TokenType)
+*/
