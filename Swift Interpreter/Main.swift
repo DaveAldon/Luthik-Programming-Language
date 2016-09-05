@@ -19,12 +19,12 @@ do {
         do {
             let input = try String(contentsOfURL: path, encoding:NSUTF8StringEncoding)
             let newlineChars = NSCharacterSet.newlineCharacterSet()
-            let lines = input.characters.split {$0 == " "}.map(String.init)
+            let lines = input.characters.split {$0 == " " || $0 == "\n"}.map(String.init)
             //let lines = input.utf16.split { newlineChars.characterIsMember($0) }.flatMap(String.init) //Split by line
             var linesLength = lines.count
 
             //Loop through the array and place its values into a public array
-            for i in 1..<linesLength {
+            for i in 0..<linesLength {
                 arrayLines.append(lines[i])
             }
         }
@@ -34,10 +34,7 @@ do {
     }
 }
 
-//Check out what's inside our public array
-print(arrayLines)
-
-/*
 var interpret: Interpreter = Interpreter()
-print(interpret.test)
-*/
+print(arrayLines)
+print(arrayLines[2])
+print(interpret.checkNumString(arrayLines[2]))
