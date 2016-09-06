@@ -10,6 +10,7 @@ import Foundation
 
 let file = "luthiksyntax.luthik"
 public var arrayLines = [String]()
+public var arrayLiness : [String] = ["Print"]
 
 do {
     if let dir = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.AllDomainsMask, true).first {
@@ -35,6 +36,10 @@ do {
 }
 
 var interpret: Interpreter = Interpreter()
+interpret.Run()
+
+/*
 print(arrayLines)
 print(arrayLines[2])
 print(interpret.checkNumString(arrayLines[2]))
+ */
