@@ -32,9 +32,9 @@ class Interpreter {
         }
     }
     
-    func PrintWords() -> [String] {
-        var printWordsSwitch = [String]()
-        switch printWordsSwitch[0] {
+    var PrintingWords = {
+        let printSwitch = ""
+        switch printSwitch {
         case "print" : func printIt(terp : Interpreter) {
             if terp.stack.count < 1 {
                 print("Nothing in stack")
@@ -50,14 +50,11 @@ class Interpreter {
             }
         default : print("PrintWords Error")
         }
-        
-        printWordsSwitch.append("print")
-        return printWordsSwitch
     }
 
 
     //Adds words from an array to the dictionary
-    func AddWords (newDictionary : [String]) {
+    func AddWords (newDictionary : [AnyObject]) {
         let arrayLength = newDictionary.count
         
         for words in 0..<arrayLength {
@@ -67,7 +64,7 @@ class Interpreter {
     
     func Run () {
         stack.append("print")
-        AddWords(PrintWords())
+        AddWords(PrintingWords)
     }
 }
 

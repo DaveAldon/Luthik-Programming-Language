@@ -10,7 +10,6 @@ import Foundation
 
 let file = "luthiksyntax.luthik"
 public var arrayLines = [String]()
-public var arrayLiness : [String] = ["Print"]
 
 do {
     if let dir = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.AllDomainsMask, true).first {
