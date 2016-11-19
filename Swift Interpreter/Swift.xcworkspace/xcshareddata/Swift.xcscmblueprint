@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4AE7070DA0EB36CE1E6BECF68FA3B51738A85024",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4AE7070DA0EB36CE1E6BECF68FA3B51738A85024" : 9223372036854775807,
+    "320528EE9259570E652395E2BE5CEC632FD45CD8" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "36EACD49-C79D-4635-863E-26E481E9D65E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4AE7070DA0EB36CE1E6BECF68FA3B51738A85024" : "Luthik\/",
+    "320528EE9259570E652395E2BE5CEC632FD45CD8" : "Capstone\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Swift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Swift Interpreter\/Swift.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DavidAldon\/Capstone-CIS463.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "320528EE9259570E652395E2BE5CEC632FD45CD8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DavidAldon\/Luthik-Programming-Language.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4AE7070DA0EB36CE1E6BECF68FA3B51738A85024"
+    }
+  ]
+}

@@ -10,4 +10,7 @@
    <FileRef
       location = "group:Token.swift">
    </FileRef>
+   <FileRef
+      location = "group:../../Capstone/FacultySchedules/FacultySchedules/MainWindow.xib">
+   </FileRef>
 </Workspace>
